@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 // third modules
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AgmCoreModule } from '@agm/core';
+
 // modules 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,6 +20,9 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     CommonModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDa6TUyZgel1yVouR8DZ0Nqh-nnCpPw0UE'
+    }),
     AppRoutingModule,
     FontAwesomeModule
   ],
@@ -25,6 +30,7 @@ import { FooterComponent } from './components/footer/footer.component';
   exports: [
     AppRoutingModule,
     FontAwesomeModule,
+    AgmCoreModule,
     HeaderComponent,
     FooterComponent
   ]
