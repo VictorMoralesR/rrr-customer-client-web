@@ -1,0 +1,13 @@
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+
+::ng-deep body{
+    background-color: $dark !important;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
