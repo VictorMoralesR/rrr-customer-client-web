@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 //modules 
 import { SupportModule } from './support.module';
 import { WebsiteModule } from './website/website.module';
+import { PortalClientModule } from './portal-client/portal-client.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FontAwesomeModule,
     SupportModule,
     WebsiteModule,
+    PortalClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
