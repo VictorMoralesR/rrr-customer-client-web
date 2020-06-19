@@ -7,6 +7,8 @@ import { AgmCoreModule } from '@agm/core';
 
 // modules 
 import { AppRoutingModule } from './app-routing.module';
+import { MatListModule } from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
 
 // components
 import { HeaderComponent } from './components/header/header.component';
@@ -20,11 +22,13 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     CommonModule,
+    FontAwesomeModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDa6TUyZgel1yVouR8DZ0Nqh-nnCpPw0UE'
     }),
     AppRoutingModule,
-    FontAwesomeModule
+    MatListModule,
+    MatDividerModule,
   ],
   entryComponents: [],
   exports: [
@@ -32,7 +36,9 @@ import { FooterComponent } from './components/footer/footer.component';
     FontAwesomeModule,
     AgmCoreModule,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MatListModule,
+    MatDividerModule,
   ]
 })
 export class SupportModule {}
