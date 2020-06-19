@@ -3,7 +3,7 @@
         <div class="col">
             <mat-selection-list [multiple]="false">
                 <h3 mat-subheader>Chats</h3>
-                <mat-list-option mat-button>
+                <mat-list-option mat-button (click)="goToConversation()">
                   <img matListAvatar src="assets/images/about/man.png" alt="Juan">
                   <h3 matLine> Juan </h3>
                   <p matLine>
