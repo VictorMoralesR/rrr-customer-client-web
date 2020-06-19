@@ -9,6 +9,8 @@ import { AgmCoreModule } from '@agm/core';
 import { AppRoutingModule } from './app-routing.module';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 // components
 import { HeaderComponent } from './components/header/header.component';
@@ -29,6 +31,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AppRoutingModule,
     MatListModule,
     MatDividerModule,
+    MatButtonModule,
+    MatIconModule
   ],
   entryComponents: [],
   exports: [
@@ -39,6 +43,8 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent,
     MatListModule,
     MatDividerModule,
+    MatButtonModule,
+    MatIconModule
   ]
 })
 export class SupportModule {}

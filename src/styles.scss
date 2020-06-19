@@ -1,5 +1,15 @@
 
 @import "_theme";
 @import "~bootstrap/scss/bootstrap";
+
+// angular material 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// project css
+.cw-cursor-pointer{
+    cursor: pointer;
+}
+button:focus {
+    outline: none;
+}
