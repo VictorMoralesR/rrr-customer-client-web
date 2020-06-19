@@ -11,6 +11,7 @@ import { WebsiteModule } from './website/website.module';
 import { PortalClientModule } from './portal-client/portal-client.module';
 import { PortalAdminModule } from './portal-admin/portal-admin.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SupportModule,
     WebsiteModule,
     PortalClientModule,
-    PortalAdminModule
+    PortalAdminModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
