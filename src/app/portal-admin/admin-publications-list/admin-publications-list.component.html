@@ -1,0 +1,24 @@
+<app-admin-header>
+    <div class="row">
+        <div class="col-12 my-3">
+            <input class="form-control" (keyup)="applyFilter($event)" placeholder="Escribe para buscar">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <mat-selection-list [multiple]="false">
+                <h3 mat-subheader>Publicaciones / <button mat-button color="primary">Agregar nueva</button></h3>
+                <div  *ngFor="let item of filteredItems">
+                    <mat-list-option mat-button (click)="goToConversation()">
+                      <h3 matLine> {{ item.title }} </h3>
+                      <p matLine>
+                        <span class="text-muted">{{ item.description }}</span>
+                      </p>
+                    </mat-list-option>
+                    <mat-divider></mat-divider>
+                </div>
+                
+            </mat-selection-list>
+        </div>
+    </div>
+</app-admin-header>

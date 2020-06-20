@@ -14,7 +14,7 @@ export class AdminLoginPageComponent implements OnInit {
   }
 
   login(){
-    this.router.navigate(['portal/admin/home']);
+    this.router.navigate(['portal/admin/inicio']);
   }
 
 }

@@ -6,6 +6,7 @@ import { AdminHomePageComponent } from './admin-home-page/admin-home-page.compon
 import { AdminChatListPageComponent } from './admin-chat-list-page/admin-chat-list-page.component';
 import { AdminConversationPageComponent } from './admin-conversation-page/admin-conversation-page.component';
 import { AdminClientsListComponent } from './admin-clients-list/admin-clients-list.component';
+import { AdminPublicationsListComponent } from './admin-publications-list/admin-publications-list.component';
 
 const routes: Routes = [
   { 
@@ -13,7 +14,7 @@ const routes: Routes = [
     component: AdminLoginPageComponent,
   },
   { 
-    path: 'portal/admin/home',
+    path: 'portal/admin/inicio',
     component: AdminHomePageComponent,
   },
   { 
@@ -21,12 +22,16 @@ const routes: Routes = [
     component: AdminChatListPageComponent,
   },
   { 
-    path: 'portal/admin/conversation',
+    path: 'portal/admin/conversacion',
     component: AdminConversationPageComponent,
   },
   { 
-    path: 'portal/admin/clients',
+    path: 'portal/admin/clientes',
     component: AdminClientsListComponent,
+  },
+  { 
+    path: 'portal/admin/publicaciones',
+    component: AdminPublicationsListComponent,
   },
 ];
 
