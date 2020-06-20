@@ -11,6 +11,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
 
 // components
 import { HeaderComponent } from './components/header/header.component';
@@ -32,7 +33,8 @@ import { FooterComponent } from './components/footer/footer.component';
     MatListModule,
     MatDividerModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
   ],
   entryComponents: [],
   exports: [
@@ -44,7 +46,8 @@ import { FooterComponent } from './components/footer/footer.component';
     MatListModule,
     MatDividerModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule
   ]
 })
 export class SupportModule {}

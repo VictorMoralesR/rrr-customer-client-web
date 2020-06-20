@@ -10,10 +10,11 @@ import { AdminHomePageComponent } from './admin-home-page/admin-home-page.compon
 import { AdminHeaderComponent } from './admin-header/admin-header.component';
 import { AdminChatListPageComponent } from './admin-chat-list-page/admin-chat-list-page.component';
 import { AdminConversationPageComponent } from './admin-conversation-page/admin-conversation-page.component';
+import { AdminClientsListComponent } from './admin-clients-list/admin-clients-list.component';
 
 
 @NgModule({
-  declarations: [AdminLoginPageComponent, AdminHomePageComponent, AdminHeaderComponent, AdminChatListPageComponent, AdminConversationPageComponent],
+  declarations: [AdminLoginPageComponent, AdminHomePageComponent, AdminHeaderComponent, AdminChatListPageComponent, AdminConversationPageComponent, AdminClientsListComponent],
   imports: [
     CommonModule,
     PortalAdminRoutingModule,

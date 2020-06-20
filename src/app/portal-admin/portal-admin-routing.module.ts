@@ -5,6 +5,7 @@ import { AdminLoginPageComponent } from './admin-login-page/admin-login-page.com
 import { AdminHomePageComponent } from './admin-home-page/admin-home-page.component';
 import { AdminChatListPageComponent } from './admin-chat-list-page/admin-chat-list-page.component';
 import { AdminConversationPageComponent } from './admin-conversation-page/admin-conversation-page.component';
+import { AdminClientsListComponent } from './admin-clients-list/admin-clients-list.component';
 
 const routes: Routes = [
   { 
@@ -22,6 +23,10 @@ const routes: Routes = [
   { 
     path: 'portal/admin/conversation',
     component: AdminConversationPageComponent,
+  },
+  { 
+    path: 'portal/admin/clients',
+    component: AdminClientsListComponent,
   },
 ];
 
