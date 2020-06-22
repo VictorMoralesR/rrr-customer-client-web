@@ -10,6 +10,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .cw-cursor-pointer{
     cursor: pointer;
 }
-button:focus {
-    outline: none;
-}
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
