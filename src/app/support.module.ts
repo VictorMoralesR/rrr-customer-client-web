@@ -7,7 +7,7 @@ import { AgmCoreModule } from '@agm/core';
 
 // modules 
 import { AppRoutingModule } from './app-routing.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
@@ -36,6 +36,7 @@ import { FooterComponent } from './components/footer/footer.component';
     }),
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     MatInputModule,
     MatListModule,
     MatDividerModule,
@@ -54,6 +55,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     FooterComponent,
     ReactiveFormsModule,
+    FormsModule,
     MatInputModule,
     MatListModule,
     MatDividerModule,
