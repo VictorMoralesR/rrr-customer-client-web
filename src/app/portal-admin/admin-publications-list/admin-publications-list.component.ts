@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-publications-list',
@@ -9,9 +10,12 @@ export class AdminPublicationsListComponent implements OnInit {
   filteredItems = ELEMENT_DATA;
   items = ELEMENT_DATA;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+  goToForm(){
+    this.router.navigate(['portal/admin/publicaciones/nueva']);
   }
 
   assignCopy(){
@@ -33,14 +37,15 @@ export class AdminPublicationsListComponent implements OnInit {
 
 export interface Publications {
   title: string;
+  active: boolean;
   position: number;
   description: string;
   content: string;
 }
 
 const ELEMENT_DATA: Publications[] = [
-  {position: 1, title: 'Título de la primera', description: 'Aquí va la descripción de la publicación', content: ''},
-  {position: 1, title: 'Título de la segunda', description: 'Aquí va la descripción de la publicación', content: ''},
-  {position: 1, title: 'Título de la tercera', description: 'Aquí va la descripción de la publicación', content: ''},
-  {position: 1, title: 'Título de la cuarta', description: 'Aquí va la descripción de la publicación', content: ''},
+  {position: 1, active:true, title: 'Título de la primera', description: 'Aquí va la descripción de la publicación', content: ''},
+  {position: 1, active:false, title: 'Título de la segunda', description: 'Aquí va la descripción de la publicación', content: ''},
+  {position: 1, active:false, title: 'Título de la tercera', description: 'Aquí va la descripción de la publicación', content: ''},
+  {position: 1, active:false, title: 'Título de la cuarta', description: 'Aquí va la descripción de la publicación', content: ''},
 ];

@@ -13,7 +13,7 @@ export class AdminChatListPageComponent implements OnInit {
   ngOnInit(): void {
   }
   goToConversation(){
-    this.router.navigate(['portal/admin/conversation']);
+    this.router.navigate(['portal/admin/conversacion']);
   }
 
 }

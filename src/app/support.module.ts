@@ -7,11 +7,16 @@ import { AgmCoreModule } from '@agm/core';
 
 // modules 
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSelectModule } from '@angular/material/select';
 
 // components
 import { HeaderComponent } from './components/header/header.component';
@@ -30,11 +35,16 @@ import { FooterComponent } from './components/footer/footer.component';
       apiKey: 'AIzaSyDa6TUyZgel1yVouR8DZ0Nqh-nnCpPw0UE'
     }),
     AppRoutingModule,
+    ReactiveFormsModule,
+    MatInputModule,
     MatListModule,
     MatDividerModule,
     MatButtonModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule,
+    MatSlideToggleModule,
+    MatSelectModule,
   ],
   entryComponents: [],
   exports: [
@@ -43,11 +53,16 @@ import { FooterComponent } from './components/footer/footer.component';
     AgmCoreModule,
     HeaderComponent,
     FooterComponent,
+    ReactiveFormsModule,
+    MatInputModule,
     MatListModule,
     MatDividerModule,
     MatButtonModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule,
+    MatSlideToggleModule,
+    MatSelectModule,
   ]
 })
 export class SupportModule {}

@@ -7,6 +7,7 @@ import { AdminChatListPageComponent } from './admin-chat-list-page/admin-chat-li
 import { AdminConversationPageComponent } from './admin-conversation-page/admin-conversation-page.component';
 import { AdminClientsListComponent } from './admin-clients-list/admin-clients-list.component';
 import { AdminPublicationsListComponent } from './admin-publications-list/admin-publications-list.component';
+import { AdminPublicationFormComponent } from './admin-publication-form/admin-publication-form.component';
 
 const routes: Routes = [
   { 
@@ -32,6 +33,10 @@ const routes: Routes = [
   { 
     path: 'portal/admin/publicaciones',
     component: AdminPublicationsListComponent,
+  },
+  { 
+    path: 'portal/admin/publicaciones/nueva',
+    component: AdminPublicationFormComponent,
   },
 ];
 

@@ -7,10 +7,10 @@
     <div class="row">
         <div class="col">
             <mat-selection-list [multiple]="false">
-                <h3 mat-subheader>Publicaciones / <button mat-button color="primary">Agregar nueva</button></h3>
+                <h3 mat-subheader>Publicaciones / <button mat-button color="primary" (click)="goToForm()">Agregar nueva</button></h3>
                 <div  *ngFor="let item of filteredItems">
-                    <mat-list-option mat-button (click)="goToConversation()">
-                      <h3 matLine> {{ item.title }} </h3>
+                    <mat-list-option mat-button >
+                      <h3 matLine> {{ item.title }} <small class="text-muted" *ngIf="item.active"> / Publicada</small></h3>
                       <p matLine>
                         <span class="text-muted">{{ item.description }}</span>
                       </p>

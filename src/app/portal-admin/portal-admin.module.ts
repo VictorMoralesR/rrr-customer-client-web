@@ -12,10 +12,11 @@ import { AdminChatListPageComponent } from './admin-chat-list-page/admin-chat-li
 import { AdminConversationPageComponent } from './admin-conversation-page/admin-conversation-page.component';
 import { AdminClientsListComponent } from './admin-clients-list/admin-clients-list.component';
 import { AdminPublicationsListComponent } from './admin-publications-list/admin-publications-list.component';
+import { AdminPublicationFormComponent } from './admin-publication-form/admin-publication-form.component';
 
 
 @NgModule({
-  declarations: [AdminLoginPageComponent, AdminHomePageComponent, AdminHeaderComponent, AdminChatListPageComponent, AdminConversationPageComponent, AdminClientsListComponent, AdminPublicationsListComponent],
+  declarations: [AdminLoginPageComponent, AdminHomePageComponent, AdminHeaderComponent, AdminChatListPageComponent, AdminConversationPageComponent, AdminClientsListComponent, AdminPublicationsListComponent, AdminPublicationFormComponent],
   imports: [
     CommonModule,
     PortalAdminRoutingModule,
