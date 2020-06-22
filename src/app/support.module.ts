@@ -7,6 +7,16 @@ import { AgmCoreModule } from '@agm/core';
 
 // modules 
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MatListModule } from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSelectModule } from '@angular/material/select';
 
 // components
 import { HeaderComponent } from './components/header/header.component';
@@ -20,11 +30,22 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     CommonModule,
+    FontAwesomeModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyDa6TUyZgel1yVouR8DZ0Nqh-nnCpPw0UE'
     }),
     AppRoutingModule,
-    FontAwesomeModule
+    ReactiveFormsModule,
+    FormsModule,
+    MatInputModule,
+    MatListModule,
+    MatDividerModule,
+    MatButtonModule,
+    MatIconModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatSlideToggleModule,
+    MatSelectModule,
   ],
   entryComponents: [],
   exports: [
@@ -32,7 +53,18 @@ import { FooterComponent } from './components/footer/footer.component';
     FontAwesomeModule,
     AgmCoreModule,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ReactiveFormsModule,
+    FormsModule,
+    MatInputModule,
+    MatListModule,
+    MatDividerModule,
+    MatButtonModule,
+    MatIconModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatSlideToggleModule,
+    MatSelectModule,
   ]
 })
 export class SupportModule {}
