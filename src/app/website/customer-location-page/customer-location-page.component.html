@@ -1,0 +1,43 @@
+<app-header></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-8 mb-3">
+            <agm-map [latitude]="lat" [zoom]="zoom" [longitude]="lng">
+                <agm-marker  [latitude]="lat" [longitude]="lng"></agm-marker>
+            </agm-map>
+            <h4 class="text-muted mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-body">
+                          <h5 class="card-title">Sede 1</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Sede 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card text-white bg-dark mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Sede 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
+

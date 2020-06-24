@@ -1,0 +1,32 @@
+<app-admin-header>
+    <div class="row">
+        <div class="col">
+            <mat-selection-list [multiple]="false">
+                <h3 mat-subheader>Chats</h3>
+                <mat-list-option mat-button (click)="goToConversation()">
+                  <img matListAvatar src="assets/images/about/man.png" alt="Juan">
+                  <h3 matLine> Juan </h3>
+                  <p matLine>
+                    <span>Podemos revisar la presentación </span>
+                  </p>
+                </mat-list-option>
+                <mat-divider></mat-divider>
+                <mat-list-option>
+                  <img matListAvatar src="assets/images/about/woman.png" alt="Alejandra">
+                  <h3 matLine> Alejandra </h3>
+                  <p matLine>
+                    <span>Hola</span>
+                  </p>
+                </mat-list-option>
+                <mat-divider></mat-divider>
+                <mat-list-option>
+                    <img matListAvatar src="assets/images/admin/chat-list/team.png" alt="Alejandra">
+                    <h3 matLine> Grupo JR </h3>
+                    <p matLine>
+                      <span>Jorge: ya esta disponible la </span>
+                    </p>
+                  </mat-list-option>
+              </mat-selection-list>
+        </div>
+    </div>
+</app-admin-header>

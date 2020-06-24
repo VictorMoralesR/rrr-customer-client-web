@@ -1,0 +1,31 @@
+<app-admin-header>
+    <h3 class="mt-3">Nueva publicación</h3>
+    <form [formGroup]="publicationForm">
+        <mat-form-field class="w-100">
+            <mat-select placeholder="Grupo" formControlName="idGrupo">
+              <mat-option value="0" >Membresía FREE</mat-option>
+              <mat-option value="1" >Membresía JR</mat-option>
+              <mat-option value="2" >Membresía MEDIUM</mat-option>
+              <mat-option value="3" >Membresía SR</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="w-100">
+            <input matInput placeholder="Título" type="text" formControlName="title"  />
+        </mat-form-field>
+        <mat-form-field class="w-100">
+            <input matInput placeholder="Subtítulo" type="text" formControlName="subtitle" />
+        </mat-form-field>
+        <mat-form-field class="w-100">
+            <textarea matInput placeholder="Contenido" type="text" formControlName="content" rows="10" ></textarea>
+        </mat-form-field>
+        <div class="w-100 my-3">
+            <mat-slide-toggle
+                [color]="color"
+                >
+                Publicar al guardar
+            </mat-slide-toggle>
+        </div>
+        <button mat-raised-button color="primary" class="block" [disabled]="!publicationForm.valid" >Guardar</button>
+    </form>
+</app-admin-header>
