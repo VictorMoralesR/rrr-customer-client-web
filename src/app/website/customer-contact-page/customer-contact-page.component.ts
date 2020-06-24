@@ -19,5 +19,9 @@ export class CustomerContactPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  sendData(){
+
+  }
 
 }
