@@ -13,7 +13,7 @@ export class ClientChatListPageComponent implements OnInit {
   ngOnInit(): void {
   }
   goToConversation():void {
-    this.router.navigate(['portal/chat']);
+    this.router.navigate(['portal/conversacion']);
   }
 
 }
