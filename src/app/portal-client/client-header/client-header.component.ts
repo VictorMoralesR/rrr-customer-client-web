@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faUser, faHome, faUserAstronaut, faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faHome, faUserAstronaut, faGlobeAmericas, faComments } from '@fortawesome/free-solid-svg-icons';
 import { faBell, faUserCircle } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
@@ -14,6 +14,7 @@ export class ClientHeaderComponent implements OnInit {
   faUserAstronaut = faUserAstronaut;
   faBell = faBell;
   faUserCircle = faUserCircle;
+  faComments = faComments;
 
   constructor() { }
 
