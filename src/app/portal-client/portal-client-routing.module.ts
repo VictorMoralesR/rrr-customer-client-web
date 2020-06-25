@@ -5,6 +5,7 @@ import { ClientLoginPageComponent } from './client-login-page/client-login-page.
 import { ClientHomePageComponent } from './client-home-page/client-home-page.component';
 import { ClientChatListPageComponent } from './client-chat-list-page/client-chat-list-page.component';
 import { ClientConversationPageComponent } from './client-conversation-page/client-conversation-page.component';
+import { ClientPublicationsListPageComponent } from './client-publications-list-page/client-publications-list-page.component';
 
 const routes: Routes = [
   { 
@@ -22,6 +23,10 @@ const routes: Routes = [
   { 
     path: 'portal/conversacion',
     component: ClientConversationPageComponent,
+  },
+  { 
+    path: 'portal/publicaciones',
+    component: ClientPublicationsListPageComponent,
   },
 ];
 

@@ -1,0 +1,24 @@
+<app-client-header>
+    <div class="row">
+        <div class="col-12 my-3">
+            <input class="form-control" (keyup)="applyFilter($event)" placeholder="Escribe para buscar">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <mat-selection-list [multiple]="false">
+                <h3 mat-subheader>Publicaciones</h3>
+                <div  *ngFor="let item of filteredItems">
+                    <mat-list-option mat-button >
+                      <h3 matLine> {{ item.title }} <small class="text-muted"> / Publicada el 28 Jun, 2020</small></h3>
+                      <p matLine>
+                        <span class="text-muted">{{ item.description }}</span>
+                      </p>
+                    </mat-list-option>
+                    <mat-divider></mat-divider>
+                </div>
+                
+            </mat-selection-list>
+        </div>
+    </div>
+</app-client-header>
