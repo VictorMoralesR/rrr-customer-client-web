@@ -9,8 +9,8 @@
             <mat-selection-list [multiple]="false">
                 <h3 mat-subheader>Publicaciones</h3>
                 <div  *ngFor="let item of filteredItems">
-                    <mat-list-option mat-button >
-                      <h3 matLine> {{ item.title }} <small class="text-muted"> / Publicada el 28 Jun, 2020</small></h3>
+                    <mat-list-option mat-button  (click)="goToPublication()">
+                      <h3 matLine> {{ item.title }} <small class="text-muted"> / 20 Jun, 2020</small></h3>
                       <p matLine>
                         <span class="text-muted">{{ item.description }}</span>
                       </p>

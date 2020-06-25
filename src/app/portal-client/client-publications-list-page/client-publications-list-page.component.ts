@@ -15,8 +15,8 @@ export class ClientPublicationsListPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  goToForm(){
-    this.router.navigate(['portal/admin/publicaciones/nueva']);
+  goToPublication(){
+    this.router.navigate(['portal/publicacion']);
   }
 
   assignCopy(){
