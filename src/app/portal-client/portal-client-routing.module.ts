@@ -7,6 +7,7 @@ import { ClientChatListPageComponent } from './client-chat-list-page/client-chat
 import { ClientConversationPageComponent } from './client-conversation-page/client-conversation-page.component';
 import { ClientPublicationsListPageComponent } from './client-publications-list-page/client-publications-list-page.component';
 import { ClientPublicationPageComponent } from './client-publication-page/client-publication-page.component';
+import { ClientSignupPageComponent } from './client-signup-page/client-signup-page.component';
 
 const routes: Routes = [
   { 
@@ -32,6 +33,10 @@ const routes: Routes = [
   { 
     path: 'portal/publicacion',
     component: ClientPublicationPageComponent,
+  },
+  { 
+    path: 'portal/registro',
+    component: ClientSignupPageComponent,
   },
 ];
 
