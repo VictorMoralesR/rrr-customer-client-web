@@ -13,10 +13,11 @@ import { ClientChatListPageComponent } from './client-chat-list-page/client-chat
 import { ClientConversationPageComponent } from './client-conversation-page/client-conversation-page.component';
 import { ClientPublicationsListPageComponent } from './client-publications-list-page/client-publications-list-page.component';
 import { ClientPublicationPageComponent } from './client-publication-page/client-publication-page.component';
+import { ClientSignupPageComponent } from './client-signup-page/client-signup-page.component';
 
 
 @NgModule({
-  declarations: [ClientLoginPageComponent, ClientHomePageComponent, ClientHeaderComponent, ClientChatListPageComponent, ClientConversationPageComponent, ClientPublicationsListPageComponent, ClientPublicationPageComponent],
+  declarations: [ClientLoginPageComponent, ClientHomePageComponent, ClientHeaderComponent, ClientChatListPageComponent, ClientConversationPageComponent, ClientPublicationsListPageComponent, ClientPublicationPageComponent, ClientSignupPageComponent],
   imports: [
     CommonModule,
     PortalClientRoutingModule,
