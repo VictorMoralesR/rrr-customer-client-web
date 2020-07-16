@@ -29,4 +29,10 @@ export class WebsocketService {
   listen( event: string ){
     return this.socket.fromEvent(event);
   }
+
+  loginWS(name:string){
+    this.emit('config-user', {name}, (resp: any)=>{
+      console.log('loginWS: ',resp);
+    });
+  }
 }
