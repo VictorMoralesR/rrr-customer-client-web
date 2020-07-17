@@ -14,6 +14,7 @@ import { ClientConversationPageComponent } from './client-conversation-page/clie
 import { ClientPublicationsListPageComponent } from './client-publications-list-page/client-publications-list-page.component';
 import { ClientPublicationPageComponent } from './client-publication-page/client-publication-page.component';
 import { ClientSignupPageComponent } from './client-signup-page/client-signup-page.component';
+import { ChatService } from '../services/chat.service';
 
 
 @NgModule({
@@ -24,4 +25,11 @@ import { ClientSignupPageComponent } from './client-signup-page/client-signup-pa
     SupportModule
   ]
 })
-export class PortalClientModule { }
+export class PortalClientModule { 
+  constructor(private chatService:ChatService){
+    chatService.getPrivateMessage().subscribe(message => {
+      console.log('private message: ', message);
+      
+    });
+  }
+}

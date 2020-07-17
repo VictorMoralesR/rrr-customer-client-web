@@ -17,6 +17,10 @@ export class WebsocketService {
   checkStatus(){
     this.socket.on('connect',()=>{
       console.log('Conectado al servidor');
+      this.localStorageService.getItem('user').then((user:any) => {
+        this.loginWS(user.name);
+        console.log('checkStatus login', user);
+      });
       this.socketStatus = true;
     });
     this.socket.on('disconnect',()=>{
