@@ -20,8 +20,9 @@ export class ClientLoginPageComponent implements OnInit {
   sendForm(){
     console.log('login:', this.email);
     
-    this.wsService.loginWS(this.email);
-    this.router.navigate(['portal/inicio']);
+    this.wsService.loginWS(this.email).then((resp)=>{
+      this.router.navigate(['portal/inicio']);
+    });
   }
 
 }

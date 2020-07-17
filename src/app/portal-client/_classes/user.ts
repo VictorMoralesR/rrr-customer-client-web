@@ -1,6 +1,6 @@
 export class User{
     public name: string;
-    construct(name:string){
+    constructor(name:string){
         this.name = name;
     }
 }

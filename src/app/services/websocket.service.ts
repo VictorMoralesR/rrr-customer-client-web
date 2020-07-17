@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Socket } from 'ngx-socket-io';
+import { LocalStorageService } from './local-storage.service';
+import { User } from '../portal-client/_classes/user';
+
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +10,7 @@ import { Socket } from 'ngx-socket-io';
 export class WebsocketService {
   public socketStatus = false;
 
-  constructor(private socket: Socket) {
+  constructor(private socket: Socket, private localStorageService:LocalStorageService) {
     this.checkStatus();
   }
 
@@ -31,8 +34,12 @@ export class WebsocketService {
   }
 
   loginWS(name:string){
-    this.emit('config-user', {name}, (resp: any)=>{
-      console.log('loginWS: ',resp);
+    return new Promise((resolve, reject)=>{
+      this.emit('config-user', {name}, (resp: any)=>{
+        const user = new User(name);
+        this.localStorageService.setItem('user',user);
+        resolve(resp);
+      });
     });
   }
 }
