@@ -12,6 +12,15 @@ import { PortalAdminModule } from './portal-admin/portal-admin.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// socket
+import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io';
+
+// environment
+import { environment } from 'src/environments/environment';
+
+const config: SocketIoConfig = { url: environment.wsUrl, options: {} };
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +32,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     WebsiteModule,
     PortalClientModule,
     PortalAdminModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SocketIoModule.forRoot(config)
   ],
   providers: [],
   bootstrap: [AppComponent]
