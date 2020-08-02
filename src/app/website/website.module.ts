@@ -14,11 +14,13 @@ import { CustomerAboutPageComponent } from './customer-about-page/customer-about
 import { CustomerContactPageComponent } from './customer-contact-page/customer-contact-page.component';
 import { CustomerLocationPageComponent } from './customer-location-page/customer-location-page.component';
 import { CustomerFaqsPageComponent } from './customer-faqs-page/customer-faqs-page.component';
+import { HeaderComponent } from './website-header/header.component';
+import { FooterComponent } from './website-footer/footer.component';
 
 
 
 @NgModule({
-  declarations: [CustomerHomePageComponent, CustomerProductsPageComponent, CustomerAboutPageComponent, CustomerContactPageComponent, CustomerLocationPageComponent, CustomerFaqsPageComponent],
+  declarations: [HeaderComponent,FooterComponent,CustomerHomePageComponent, CustomerProductsPageComponent, CustomerAboutPageComponent, CustomerContactPageComponent, CustomerLocationPageComponent, CustomerFaqsPageComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
