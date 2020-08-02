@@ -1,78 +1,71 @@
 <app-header></app-header>
-
-<div class="container">
+<br>
+<div class="container mt-3">
     <div class="row">
         <div class="col">
             <div class="row justify-content-md-center  mb-5">
                 <div class="col col-md-8">
                     <h2 class="text-center font-weight-bold">
-                        Pricing
+                        Lista de precios
                     </h2>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, odit reprehenderit officia cupiditate deleniti possimus distinctio? Sapiente nam non.</p>
+                    <p class="text-justify">La lista de precios se actualiza frecuentemente dependiendo de diferentes factores. La lista es un precio aproximado y puede variar un poco al dia de hoy.</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-8 col-lg-3">
-            <div class="card mb-3 text-center">
-                <h4 class="card-header my-0 font-weight-normal">Free</h4>
-                <div class="card-body">
-                  <h1 class="card-title">$0 <span class="text-muted">/ mo</span></h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button type="button" class="btn btn-lg btn-block btn-outline-primary" (click)="goToSignUp('free')">Sign up for free</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-8 col-lg-3">
-            <div class="card bg-dark text-white mb-3 text-center">
-                <h4 class="card-header my-0 font-weight-normal">JR</h4>
-                <div class="card-body">
-                  <h1 class="card-title">$20 <span class="text-muted">/ mo</span></h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button type="button" class="btn btn-lg btn-block btn-primary" (click)="goToSignUp('jr')" >Get started</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-8 col-lg-3">
-            <div class="card bg-dark text-white mb-3 text-center">
-                <h4 class="card-header my-0 font-weight-normal">Medium</h4>
-                <div class="card-body">
-                  <h1 class="card-title">$40 <span class="text-muted">/ mo</span></h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button type="button" class="btn btn-lg btn-block btn-primary" (click)="goToSignUp('md')" >Get started</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-8 col-lg-3">
-            <div class="card bg-dark text-white mb-3 text-center">
-                <h4 class="card-header my-0 font-weight-normal">Senior</h4>
-                <div class="card-body">
-                  <h1 class="card-title">$60 <span class="text-muted">/ mo</span></h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button type="button" class="btn btn-lg btn-block btn-primary" (click)="goToSignUp('sr')" >Get started</button>
-                </div>
-            </div>
+        <div class="col-12 col-lg-3">
+          <div class="table-responsive">
+            <table class="table">
+              <caption>Precios actualizados 02/Agosto/2020</caption>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Material</th>
+                <th scope="col">Unidad</th>
+                <th scope="col">Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Acero</td>
+                <td>KG</td>
+                <td>$ 12.00</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Cobre</td>
+                <td>KG</td>
+                <td>$ 20.00</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Aluminio</td>
+                <td>KG</td>
+                <td>$ 40.00</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Bronce</td>
+                <td>KG</td>
+                <td>$14.00</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Fierro 1era</td>
+                <td>KG</td>
+                <td>$ 10.00</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Fierro 2da</td>
+                <td>KG</td>
+                <td>$ 8.00</td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
         </div>
     </div>
 </div>
