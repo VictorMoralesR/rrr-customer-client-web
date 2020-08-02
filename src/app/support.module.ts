@@ -18,15 +18,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSelectModule } from '@angular/material/select';
 
-// components
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-
-
 @NgModule({
   declarations: [
-    HeaderComponent,
-    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -52,8 +45,6 @@ import { FooterComponent } from './components/footer/footer.component';
     AppRoutingModule,
     FontAwesomeModule,
     AgmCoreModule,
-    HeaderComponent,
-    FooterComponent,
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
